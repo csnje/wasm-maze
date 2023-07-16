@@ -1,0 +1,19 @@
+[package]
+name = "wasm-maze"
+version = "0.1.0"
+authors = ["Chris Snape-Jenkinson"]
+edition = "2021"
+description = "An implementation of simply connected maze generation and solving algorithms"
+license = "MIT OR APACHE-2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "0.3"
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = ["console", "CanvasRenderingContext2d", "Document", "Event", "HtmlButtonElement", "HtmlCanvasElement", "HtmlInputElement", "HtmlOptionElement", "HtmlSelectElement", "Window"]}
+
+[profile.release]
+lto = true
+opt-level = 's'
