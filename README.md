@@ -10,7 +10,7 @@ An implementation of some [simply connected](https://en.wikipedia.org/wiki/Simpl
 
 Install [**Rust**](https://www.rust-lang.org/) and [**wasm-pack**](https://github.com/rustwasm/wasm-pack).
 
-## Compile
+## Build
 
 ```bash
 wasm-pack build --target web
@@ -20,7 +20,7 @@ or optimised for release
 wasm-pack build --target web --release
 ```
 
-## Serve and run
+## Run
 
 Some options to serve the application include:
 ```bash
