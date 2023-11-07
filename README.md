@@ -22,8 +22,6 @@ wasm-pack build --target web --release
 
 ## Serve and run
 
-## Serve and run
-
 Some options to serve the application include:
 ```bash
 # Python 3.x
